@@ -1,0 +1,24 @@
+{
+  "name": "webyapp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "english",
+    "learning",
+    "chatgpt",
+    "spanish"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Minimal chat wrapper for English-learning prompts in Spanish (Spain) using OpenAI",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "openai": "^6.9.1"
+  }
+}

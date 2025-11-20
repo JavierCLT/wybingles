@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inglés Express - Tutor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="layout">
+    <section class="panel">
+      <header class="panel__header">
+        <div>
+          
+          <h1>Tu asistente de inglés</h1>
+          <p class="lede">Haz preguntas en español sobre gramática, vocabulario o cómo sonar natural. Recibirás respuestas breves y en español (España).</p>
+        </div>
+        
+      </header>
+
+      <form id="chat-form" class="form">
+        <label for="prompt">Escribe tu duda</label>
+        <textarea id="prompt" name="prompt" rows="4" placeholder="Ej.: ¿Es correcto decir &quot;when you got up this morning&quot;?" required></textarea>
+        <div class="form__actions">
+          <small>Respuestas breves. Si no es sobre inglés, el bot lo indicará.</small>
+          <button id="submit-btn" type="submit">Enviar</button>
+        </div>
+      </form>
+
+      <section class="response" aria-live="polite">
+        <div class="response__label">Respuesta</div>
+        <div id="status" class="status"></div>
+        <div id="response" class="response__body">Aquí verás la respuesta.</div>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
